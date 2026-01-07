@@ -34,4 +34,9 @@ body {
 
 .links a:hover {
     background: #ccc;
+} 
+body {
+    filter: grayscale(100%);
 }
+
+
