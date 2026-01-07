@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>CEO Discord</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>👑 CEO del Server Discord</h1>
+
+<div class="card">
+    <img src="img/ceo1.png">
+    <h2>swarz</h2>
+    <p>CEO del server Discord</p>
+
+    <div class="links">
+        <a href="https://discord.gg/cb9PjHaxtp" target="_blank">Server Discord</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/ceo2.png">
+    <h2>astenersi</h2>
+    <p>Co-CEO del server Discord</p>
+
+    <div class="links">
+        <a href="https://discord.gg/cb9PjHaxtp" target="_blank">Server Discord</a>
+    </div>
+</div>
+
+</body>
+</html>
+
