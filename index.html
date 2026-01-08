@@ -30,5 +30,58 @@
 </div>
 
 </body>
-</html>
+</html> <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Il mio sito con musica</title>
+  <style>
+    #playButton {
+      display: none;       /* nascosto di default */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Benvenuto sul mio sito!</h1>
+
+<!-- Lettore audio nascosto -->
+<audio id="musica" src="funk.mp3.mp3" loop></audio>
+
+<!-- Pulsante per far partire la musica se l'autoplay è bloccato -->
+<button id="playButton">Clicca per ascoltare la musica</button>
+
+<script>
+  const audio = document.getElementById('musica');
+  const playButton = document.getElementById('playButton');
+
+  // Prova ad avviare la musica automaticamente
+  window.addEventListener('load', () => {
+    const playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        console.log("Musica partita automaticamente!");
+      }).catch(error => {
+        console.log("Autoplay bloccato, mostra il pulsante.");
+        playButton.style.display = 'inline-block';
+      });
+    }
+  });
+
+  // Funzione del pulsante
+  playButton.addEventListener('click', () => {
+    audio.play();
+    playButton.style.display = 'none'; // nasconde il pulsante dopo il cl
+
+
+
 
