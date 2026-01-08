@@ -54,7 +54,7 @@
 <h1>Benvenuto sul mio sito!</h1>
 
 <!-- Lettore audio nascosto -->
-<audio id="musica" src="funk.mp3.mp3" loop></audio>
+<audio id="musica" src="funk.mp3" loop></audio>
 
 <!-- Pulsante per far partire la musica se l'autoplay è bloccato -->
 <button id="playButton">Clicca per ascoltare la musica</button>
@@ -81,6 +81,7 @@
   playButton.addEventListener('click', () => {
     audio.play();
     playButton.style.display = 'none'; // nasconde il pulsante dopo il cl
+
 
 
 
